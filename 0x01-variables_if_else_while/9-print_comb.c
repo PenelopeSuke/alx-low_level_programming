@@ -7,10 +7,10 @@ int main(void)
 {
 	int t;
 
-	for (t = 0; t < 9; t++)
+	for (t = 0; t < 100; t++)
 	{
 		putchar(t);
-		if (t < 8)
+		if (t < 99)
 		{
 			putchar(',');
 			putchar(' ');
