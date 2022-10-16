@@ -5,17 +5,17 @@
  */
 int main(void)
 {
-	int n;
+	int t;
 
-	for (n = 9; n < 19; n++)
+	for (t = 0; t < 20; n++)
 	{
-		putchar(n);
-		if (n != 18)
+		putchar(t);
+		if (n < 19)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		putchar('\n');
-		return (0);
 	}
+	putchar('\n');
+	return (0);
 }
