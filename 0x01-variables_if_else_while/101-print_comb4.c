@@ -5,27 +5,12 @@
  */
 int main(void)
 {
-	int a, b, c, e;
+	char h = '0', t = '1', u = '2';
 
-	a = 0;
-	while (a < 1000)
+	while ((h <= '7') || (t <= '8') || (u <= '9'))
 	{
-		b = a  / 100; /* hindreds */
-		c = (a / 10) % 10; /* tens */
-		e = a % 100; /* units */
-		if (b < c && c < e)
-		{
-		putchar(e + '0');
-		putchar(c + '0');
-		putchar(b + '0');
-		if (a < 789)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		}
-		a++;
+		printf ("%c%c%c,", h, t, u);
+		u != '9' ? ++u : (t != '8' ? (++t, u = t + 1) : (++h, t = h + 1, u = t + 1));
 	}
-	putchar('\n');
 	return (0);
 }
