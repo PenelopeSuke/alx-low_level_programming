@@ -13,7 +13,7 @@ int main(void)
 		{
 			for (d = 2; d <= 9; d++)
 			{
-				printf ("%c%c%c, ", a, b, d);
+				printf ("%d%d%d, ", a, b, d);
 			}
 		}
 	}
