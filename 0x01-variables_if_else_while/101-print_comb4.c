@@ -7,11 +7,11 @@ int main(void)
 {
 	int a, b, d;
 
-	for (a = 0; a <= 7; a++)
+	for (a = '0'; a <= '7'; a++)
 	{
-		for (b = 1; b <= 8; b++)
+		for (b = '1'; b <= '8'; b++)
 		{
-			for (d = 2; d <= 9; d++)
+			for (d = '2'; d <= '9'; d++)
 			{
 				printf ("%d%d%d, ", a, b, d);
 			}
