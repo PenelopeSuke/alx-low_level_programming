@@ -11,6 +11,7 @@ int main(void)
 	{
 		putchar((t % 10) + '0');
 		if (t == 9)
+			continue;
 		{
 			putchar(',');
 			putchar(' ');
