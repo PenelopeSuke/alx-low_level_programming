@@ -5,12 +5,19 @@
  */
 int main(void)
 {
-	int h = '0', t = '1', u = '2';
+	int a, b, c, d;
 
-	while ((h <= '7') || (t <= '8') || (u <= '9'))
+	for (a = 0; a <= 7; a++)
 	{
-		printf ("%c%c%c, ", h, t, u);
-		u != '9' ? +u : (t != '8' ? (++t, u = t + 1) : (++h, t = h + 1, u = t + 1));
+		for (b = 1; b <= 8; b++)
+		{
+			for (d = 2; d <= 9; d++)
+			{
+				printf ("%c%c%c, ", a, b, c, d);
+			}
+		}
 	}
 	return (0);
 }
+
+
