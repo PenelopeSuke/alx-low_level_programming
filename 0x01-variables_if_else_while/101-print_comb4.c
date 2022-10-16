@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int a, b, d;
 
 	for (a = 0; a <= 7; a++)
 	{
@@ -13,7 +13,7 @@ int main(void)
 		{
 			for (d = 2; d <= 9; d++)
 			{
-				printf ("%d%d%d%d, ", a, b, c, d);
+				printf ("%d%d%d%d, ", a, b, d);
 			}
 		}
 	}
