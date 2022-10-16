@@ -3,31 +3,31 @@
  * main - prints all possible different combinations of three digits.
  * Return: Always 0
  */
-int main()
+int main(void)
 {
-	int h = '0', t = '1', u = '2';
-	while ((h <= '7') || (t <= '8') || (u <= '9'))
+	int a, b, c;
+	
+	
+	for (a = 0; a < 8; a++)
 	{
-		printf ("%c%c%c, ", h, t, u);
-
-		if (u != '9')
+		for (b = a + 1; b < 9; b++)
 		{
-			++u;
+			for (c = b + 1; c < 10; c++)
+			{
+				if (a != b && a != c && b != c)
+				{
+					putchar(a + '0');
+					putchar(b + '0');
+					putchar(c + '0');
+					if (a + b + c < 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+			}
 		}
-		else
-		{
-			if (t != '8')
-			{
-				++t;
-				u = t + 1;
-			}
-			else
-			{
-				++h;
-				t = h + 1;
-				u = t + 1;
-			}
 	}
+	putchar('\n');
 	return (0);
-	}
 }
