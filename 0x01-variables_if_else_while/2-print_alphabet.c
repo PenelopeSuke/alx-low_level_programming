@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print alfa in lower case
+ * main - prints the alphabet in lowercase, followed by a new line
  * Return: Always 0
  */
 int main(void)
