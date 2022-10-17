@@ -15,7 +15,7 @@ int main(void)
 			putchar((num4 / 10) + '0');
 			putchar((num4 % 10) + '0');
 			putchar(' ');
-			putchar((num4 / 10) + '0');
+			putchar((num5 / 10) + '0');
 			putchar((num5 % 10) + '0');
 
 			if (num4 == 98 && num5 == 99)
