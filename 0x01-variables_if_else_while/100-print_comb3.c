@@ -8,14 +8,14 @@ int main(void)
 {
 	int digit7, digit8;
 
-	for (digit7 = 0; digit7 < 9; digit7++)
+	for (digit7 = 0; digit7 < 8; digit7++)
 	{
-		for (digit8 = 0; digit8 < 9; digit8++)
+		for (digit8 = 1; digit8 < 9; digit8++)
 		{
-			putchar((digit7 % 9) + '0');
-			putchar((digit8 % 9) + '0');
+			putchar((digit7 % 8) + '0');
+			putchar((digit8 % 9) + '1');
 
-			if (digit7 == 8 && digit8 == 8)
+			if (digit7 == 7 && digit8 == 8)
 				continue;
 
 			putchar(',');
