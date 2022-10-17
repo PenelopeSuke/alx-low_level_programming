@@ -5,19 +5,19 @@
  */
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int digit7, digit8, digit9;
 
-	for (digit1 = 0; digit1 < 8; digit1++)
+	for (digit7 = 0; digit7 < 8; digit7++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
+		for (digit8 = digit7 + 1; digit8 < 9; digit8++)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			for (digit9 = digit8 + 1; digit9 < 10; digit9++)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
+				putchar((digit7 % 10) + '0');
+				putchar((digit8 % 10) + '0');
+				putchar((digit9 % 10) + '0');
 
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+				if (digit7 == 7 && digit8 == 8 && digit9 == 9)
 					continue;
 
 				putchar(',');
