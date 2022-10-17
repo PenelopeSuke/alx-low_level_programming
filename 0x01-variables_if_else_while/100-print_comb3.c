@@ -12,10 +12,10 @@ int main(void)
 	{
 		for (digit8 = 1; digit8 < 9; digit8++)
 		{
-			putchar((digit7 % 8) + '0');
-			putchar((digit8 % 9) + '1');
+			putchar((digit7 % 10) + '0');
+			putchar((digit8 % 10) + '1');
 
-			if (digit7 == 7 && digit8 == 8)
+			if (digit7 == 8 && digit8 == 8)
 				continue;
 
 			putchar(',');
