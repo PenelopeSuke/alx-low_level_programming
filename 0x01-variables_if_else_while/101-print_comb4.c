@@ -5,26 +5,23 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	for (a = 0; a < 8; a++)
+	int digit1, digit2, digit3;
+
+	for (digit1 = 0; digit1 < 8; digit1++)
 	{
-		for (b = a + 1; b < 9; b++)
+		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
 		{
-			for (c = b + 1; c < 10; c++)
+			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 			{
-				if (a != b && a != c && b != c)
-				{
-					putchar(a + '0');
-					putchar(b + '0');
-					putchar(c + '0');
-					if (a + b + c < 24)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar((digit1 % 10) + '0');
+				putchar((digit2 % 10) + '0');
+				putchar((digit3 % 10) + '0');
+
+				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+					continue;
+
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
