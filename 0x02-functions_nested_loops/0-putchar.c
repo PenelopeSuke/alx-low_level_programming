@@ -2,7 +2,7 @@
  * Aith: Penelope Suke
  *
  */
-#include <stdio.h>
+#include <main.h>
 #include "_putchar.h"
 /**
  * main -  program that prints _putchar, followed by a new line
