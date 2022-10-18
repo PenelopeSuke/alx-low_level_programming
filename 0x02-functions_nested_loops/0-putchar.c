@@ -1,9 +1,4 @@
-/* File: _putchar.h
- * Aith: Penelope Suke
- *
- */
 #include "main.h"
-#include "_putchar.h"
 /**
  * main -  program that prints _putchar, followed by a new line
  * Return: Always 0
