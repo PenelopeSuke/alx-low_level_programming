@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long fibo7 = 0, fib08 = 1, fibsum;
+	unsigned long fibo7 = 0, fibo8 = 1, fibsum;
 	float tot_sum;
 
 	while (1)
