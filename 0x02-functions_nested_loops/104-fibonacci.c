@@ -9,7 +9,7 @@ int main(void)
 	int count;
 	unsigned long fib7 = 0, fib8 = 1, sum;
 	unsigned long fib7_half7, fib7_half8, fib8_half7, fib8_half8;
-	unsigned long half1, half2;
+	unsigned long half7, half8;
 
 	for (count = 0; count < 92; count++)
 	{
