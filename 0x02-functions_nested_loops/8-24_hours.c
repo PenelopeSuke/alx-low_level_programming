@@ -1,4 +1,4 @@
-#includio "main.h"
+#include "main.h"
 /**
  * times_table - Prints the 9 times table, starting with 0
  */
@@ -24,7 +24,7 @@ void times_table(void)
 
 			_putchar((num3 % 10) + '0');
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
 
