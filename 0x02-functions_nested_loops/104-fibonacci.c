@@ -29,7 +29,7 @@ int main(void)
 	{
 		half7 = fib7_half7 + fib8_half7;
 		half8 = fib7_half8 + fib8_half8;
-		if (fib7_half9 + fib8_half8 > 9999999999)
+		if (fib7_half8 + fib8_half8 > 9999999999)
 		{
 			half7 += 1;
 			half8 %= 10000000000;
