@@ -5,12 +5,25 @@
  */
 void print_number(int n)
 {
-	if (n < 0)
+	if (n / 10 != 0)
+	{
+		printnumber(n / 10);
+		if (n > 0)
+		{
+			putchar(n % 10 + '0');
+		}
+		else
+		{
+			putchar(-n % 10 + '0')
+		}
+	}
+	else if ((n / 10 == 0) && (n % 10 != 0) && (n > 0))
+	{
+		putchar(n % 10 + '0');
+	}
+	else if ((n / 10 == 0) && (n % 10 != 0) && (n < 0))
 	{
 		putchar('-');
-		n = -n
+		putchar(-n % 10 + '0');
 	}
-	if (n / 10)
-		print(n / 10);
-	putchar(n % 10 + '0');
 }
