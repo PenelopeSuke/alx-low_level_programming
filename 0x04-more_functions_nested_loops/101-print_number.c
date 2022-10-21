@@ -8,7 +8,8 @@ void print_number(int n)
 	long m;
 	int c;
 	long num;
-	long num = n;
+	
+	num = n;
 
 	if (num < 0)
 	{
