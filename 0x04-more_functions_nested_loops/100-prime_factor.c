@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 /**
  * main - rints the largest prime factor of the number 612852475143
  * followed by a new line
@@ -11,9 +12,9 @@ int main(void)
 
 	for (d = (int) sqrt(num); d > 2; d++)
 	{
-		if (num % c == 0)
+		if (num % d == 0)
 		{
-			printf("%d\n", c);
+			printf("%d\n", d);
 			break;
 		}
 	}
