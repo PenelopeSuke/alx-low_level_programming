@@ -14,10 +14,3 @@ void print_number(int n)
 		print(n / 10);
 	putchar(n % 10 + '0');
 }
-int main(void)
-{
-	int n = 976;
-
-	print(n);
-	return (0);
-}
