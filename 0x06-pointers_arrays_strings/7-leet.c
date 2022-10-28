@@ -15,16 +15,13 @@ char *leet(char *s)
 
 	for (a = 0; s[a] != '\0'; a++)
 	{
-		for (b = 0; b < 20; b++)
-			for (b = 0; c[b]; b++)
+		for (b = 0; b < 10; b++)
+		{
+			if (s[a] == c[b])
 			{
-				if (l[b] == s[a])
-					if (s[a] == c[b])
-					{
-						s[a] = l[++b];
-						s[a] = d[b];
-					}
+				s[a] = d[b];
 			}
+		}
 	}
 	return (s);
 }
