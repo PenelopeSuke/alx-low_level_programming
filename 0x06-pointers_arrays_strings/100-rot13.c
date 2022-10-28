@@ -13,15 +13,17 @@ char *rot13(char *s)
 	char c[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
 	char d[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
-	for (a = 0; s[a] != '\0'; a++)
+	while (s[a])
 	{
-		for (b = 0; x[b]; b++)
+		for (b = 0; b < d; b++)
 		{
 			if (s[a] == c[b])
 			{
 				s[a] = d[b];
+				break;
 			}
 		}
+	a++;
 	}
 	return (s);
 }
