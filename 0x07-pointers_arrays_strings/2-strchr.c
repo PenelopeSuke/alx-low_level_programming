@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strchr - function that gets the length of a prefix substring
+ * _strchr - function that locates a character in a string
  * @s: input
  * @c: input
  * Return: Always 0 (Success)
