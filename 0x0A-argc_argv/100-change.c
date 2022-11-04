@@ -46,7 +46,7 @@ int coinConverter(int a)
  */
 int main(int argc, char *argv[])
 {
-	int b, coin;
+	int a, coin;
 
 	coin = 0;
 
@@ -55,13 +55,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	b = atoi(argv[1]);
+	a = atoi(argv[1]);
 
-	if (b < 0)
+	if (a < 0)
 		printf("0\n");
 	else
 	{
-		coin = coinConverter(b);
+		coin = coinConverter(a);
 
 		printf("%d\n", coin);
 	}
