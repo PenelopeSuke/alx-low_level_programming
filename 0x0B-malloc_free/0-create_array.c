@@ -9,10 +9,10 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *array;
-	unsigned int a;
+	char *buffer;
+	unsigned int i;
 
-	a = 0;
+	i = 0;
 
 	if (size == 0)
 	{
@@ -20,19 +20,19 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		array = malloc(sizeof(char) * size);
-			if (array == 0)
+		buffer = malloc(sizeof(char) * size);
+			if (buffer == 0)
 			{
 				return (NULL);
 			}
 			else
 			{
-				while (a < size)
+				while (i < size)
 				{
-					array[a] = c;
-					a++;
+					buffer[i] = c;
+					i++;
 				}
 			}
-			return (array);
+			return (buffer);
 	}
 }
