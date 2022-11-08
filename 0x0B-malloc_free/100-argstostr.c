@@ -24,17 +24,17 @@ char *argstostr(int ac, char **av)
 	s = malloc(count * sizeof(char));
 	if (s == NULL)
 	{
-		fre(s);
+		free(s);
 		return (NULL);
 	}
-	C = 0;
+	c = 0;
 	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; av[a][b] != 0; b++, c++)
 		{
-			s[c] = av[a][v];
+			s[c] = av[a][b];
 		}
-		s[c] - '\n';
+		s[c] = '\n';
 		c++;
 	}
 	return (s);
