@@ -21,18 +21,18 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		array = malloc(sizeof(char) * size);
-		if (array == '\0')
-		{
-			return ('\0');
-		}
-		else
-		{
-			while (a < size)
+			if (array == '\0')
 			{
-				array[a] = c;
-				a++;
+				return ('\0');
 			}
-		}
-		return (array);
+			else
+			{
+				while (a < size)
+				{
+					array[a] = c;
+					a++;
+				}
+			}
+			return (array);
 	}
 }
