@@ -3,19 +3,18 @@
 #include <stdlib.h>
 
 /**
- * *malloc_checked - Creates an array based on passed in value
- * @b: Value passed in for array creation
- * Return: nothing
+ * *malloc_checked - allocates memory using malloc
+ * @b: size to be allocated
+ * Return: pointer to allocated memory or exit with 98
  */
 void *malloc_checked(unsigned int b)
 {
-	void *c;
+	void *a;
 
-	C = malloc(b);
-
-	if (c == NULL)
+	a = malloc(b);
+	if (a == NULL)
 	{
 		exit(98);
 	}
-	return (c);
+	return (a);
 }
