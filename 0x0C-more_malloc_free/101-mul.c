@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argc[i][j] != 0; j++)
+		for (j = 0; argc[i][j] != '\0'; j++)
 		{
 			if (argc[i][j] > 57 || argc[i][j] < 48)
 			{
