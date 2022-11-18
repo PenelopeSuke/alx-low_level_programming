@@ -7,7 +7,7 @@
  * @argv: the parameeters in the case the number ob bytes.
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int count;
 
