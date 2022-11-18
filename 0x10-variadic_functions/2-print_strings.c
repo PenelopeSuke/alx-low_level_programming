@@ -10,7 +10,7 @@
  */
 rings(const char *separator, const unsigned int n, ...)
 {
-	va_list strings;
+	va_list string;
 	unsigned int a;
 	char *str;
 
@@ -19,11 +19,11 @@ rings(const char *separator, const unsigned int n, ...)
 		separator = "";
 	}
 
-	va_start(strings, n);
+	va_start(string, n);
 
 	for (a = 0; a < n; a++)
 	{
-		str = va_arg(strings, char *);
+		str = va_arg(string, char *);
 		if (str == NULL)
 		{
 			printf("(nil)");
@@ -38,5 +38,5 @@ rings(const char *separator, const unsigned int n, ...)
 
 	}
 	printf("\n");
-	va_end(strings);
+	va_end(string);
 }
