@@ -8,7 +8,7 @@
  * @separator: character separator of numbers
  * Return: 0
  */
-rings(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list string;
 	unsigned int a;
