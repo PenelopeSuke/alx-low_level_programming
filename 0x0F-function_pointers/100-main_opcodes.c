@@ -9,26 +9,28 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, n;
+	int count;
 
+	count = 0;
 	if (argc != 2)
 	{
 		printf("Error\n")
 			return (1);
 	}
-	n = atoi(argv[1]);
-	if (n < 0)
+	if (atoi(argv[1]) < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	for (i = 0; i < n; i++)
+	while (count < atoi(argv[1]))
 	{
-		printf("%02hhx", *((char *)main + i));
-		if (i < n - 1)
+		printf("%02x", *((unsigned char *)main + count));
+		count++;
+		if (atoi(argv[1]) > count)
+		{
 			printf(" ");
-		else
-			printf("\n");
+		}
 	}
+	printf("\n");
 	return (0);
 }
