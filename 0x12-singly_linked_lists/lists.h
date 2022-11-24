@@ -5,12 +5,15 @@
 
 /**
  * struct list_s - singly linked list
- * @n: integer
- *  @next: next node
+ * @str: integer
+ * @len: length of the string
+ * @next: next node
+ * Return: NULL
  */
 typedef struct list_s
 {
-	int n;
+	char *str;
+	unsigned int len;
 	struct list_s *next;
 } list_t;
 
