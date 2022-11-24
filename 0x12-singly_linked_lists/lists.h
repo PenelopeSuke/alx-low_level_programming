@@ -4,15 +4,15 @@
 #include <stdlib.h>
 
 /**
- * struct listint_s - singly linked list
+ * struct list_s - singly linked list
  * @n: integer
  *  @next: next node
  */
-typedef struct listint_s
+typedef struct list_s
 {
 	int n;
-	struct listint_s *next;
-} listint_t;
+	struct list_s *next;
+} list_t;
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
