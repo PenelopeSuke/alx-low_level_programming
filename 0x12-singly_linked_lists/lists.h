@@ -8,7 +8,6 @@
  * @str: integer
  * @len: length of the string
  * @next: next node
- * Return: NULL
  */
 typedef struct list_s
 {
