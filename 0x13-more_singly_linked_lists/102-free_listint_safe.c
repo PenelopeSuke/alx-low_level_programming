@@ -39,7 +39,7 @@ size_t looped_listint_count(listint_t *head)
 			return (nodes);
 		}
 		node1 = node1->next;
-		node2 = (node2->nex)->next;
+		node2 = (node2->next)->next;
 	}
 	return (0);
 }
