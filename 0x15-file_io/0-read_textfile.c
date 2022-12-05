@@ -13,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t name, file1, a;
 	char *file2;
 
-	text = malloc(letters);
+	file2 = malloc(letters);
 	if (file2 == NULL)
 		return (0);
 
@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(file2);
 		return (0);
 	}
-	let = read(name, file2, letters);
+	file1 = read(name, file2, letters);
 
 	a = write(STDOUT_FILENO, file2, file1);
 	close(name);
