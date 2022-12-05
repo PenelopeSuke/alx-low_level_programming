@@ -30,5 +30,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	a = write(STDOUT_FILENO, file2, file1);
 	close(name);
-	return(a);
+	return (a);
 }
